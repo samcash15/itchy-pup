@@ -1,3 +1,5 @@
+package com.cashion.itchy_pup.domain;
+
 public enum Symptom {
     SCRATCHING,
     LICKING,

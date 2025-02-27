@@ -1,8 +1,15 @@
+package com.cashion.itchy_pup.domain;
+
+import java.time.LocalDateTime;
+import java.util.HashSet;
+import java.util.Set;
+
+import jakarta.persistence.*;
+import lombok.Data;
+
 @Entity
 @Table(name = "symptom_logs")
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
 public class SymptomLog {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -31,15 +38,4 @@ public class SymptomLog {
     protected void onCreate() {
         date = LocalDateTime.now();
     }
-}
-
-@Embeddable
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-public class WeatherData {
-    private Double temperature;
-    private Double humidity;
-    private Double pollenCount;
-    private String weatherCondition;
-}
+} 
