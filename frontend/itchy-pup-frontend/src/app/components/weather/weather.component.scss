@@ -1,0 +1,73 @@
+.weather-container {
+  padding: 1rem;
+}
+
+.pollen-data {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.pollen-risk {
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+
+  h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .risk {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+  }
+
+  .count {
+    font-size: 0.875rem;
+    margin: 0;
+    opacity: 0.8;
+  }
+
+  &.risk-low {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+  }
+
+  &.risk-moderate {
+    background-color: #fff3e0;
+    color: #ef6c00;
+  }
+
+  &.risk-high {
+    background-color: #ffebee;
+    color: #c62828;
+  }
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+
+  p {
+    margin: 0;
+    color: #666;
+  }
+}
+
+.error {
+  padding: 1rem;
+  text-align: center;
+  color: #c62828;
+}
+
+@media (max-width: 600px) {
+  .pollen-data {
+    grid-template-columns: 1fr;
+  }
+} 
