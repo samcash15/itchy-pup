@@ -22,3 +22,5 @@ I would like to also implement the Google Pollen API to send push notifications 
 - JWT Authentication
 - Spring Security   
 
+## Dashboard Progress so far:
+![image](https://github.com/user-attachments/assets/d5166df9-2bd0-408a-84fe-f9807bb8d5e6)
