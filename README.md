@@ -11,3 +11,14 @@ My hope with this app is to create something simple for the users to quickly tra
 review. Along with, eventually being able to export this data and email it directly to your vet.
 
 I would like to also implement the Google Pollen API to send push notifications to the user based on the day if your pets allergies align with what you have inputted as your dogs environment allergy.
+
+## Tech Stack
+- Java
+- Spring Boot
+- Angular
+- PostgreSQL
+- Docker
+- OpenAPI/Swagger
+- JWT Authentication
+- Spring Security   
+

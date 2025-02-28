@@ -1,0 +1,36 @@
+<div class="login-container">
+  <div class="login-card">
+    <div class="header">
+      <h1>Login</h1>
+      <p>Sign in to continue</p>
+    </div>
+
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email" type="email" placeholder="your@email.com">
+        <mat-error *ngIf="loginForm.get('email')?.hasError('required')">
+          Email is required
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input matInput formControlName="password" [type]="hidePassword ? 'password' : 'text'">
+        <mat-icon matSuffix (click)="hidePassword = !hidePassword" class="cursor-pointer">
+          {{hidePassword ? 'visibility_off' : 'visibility'}}
+        </mat-icon>
+      </mat-form-field>
+
+      <button mat-flat-button color="primary" type="submit" [disabled]="loginForm.invalid || loading">
+        <mat-spinner diameter="20" *ngIf="loading"></mat-spinner>
+        <span *ngIf="!loading">Sign In</span>
+      </button>
+
+      <div class="footer">
+        <span>Don't have an account?</span>
+        <a routerLink="/register">Create one</a>
+      </div>
+    </form>
+  </div>
+</div> 

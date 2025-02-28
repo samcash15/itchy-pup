@@ -1,0 +1,123 @@
+.register-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+}
+
+.register-card {
+  width: 100%;
+  max-width: 450px;
+  padding: 3rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: #666;
+    margin: 0.75rem 0 0;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+
+  mat-form-field {
+    width: 100%;
+  }
+
+  button {
+    margin-top: 1rem;
+    height: 52px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+}
+
+.footer {
+  margin-top: 1.5rem;
+  text-align: center;
+  color: #666;
+
+  a {
+    color: #1976d2;
+    text-decoration: none;
+    margin-left: 0.5rem;
+    font-weight: 500;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+::ng-deep {
+  .mat-mdc-text-field-wrapper {
+    padding: 0 !important;
+  }
+
+  .mat-mdc-form-field-outline {
+    background: #f8fafc;
+  }
+
+  .mdc-text-field--outlined {
+    height: 56px !important;
+  }
+
+  .mat-mdc-input-element {
+    padding: 16px !important;
+    font-size: 1.1rem;
+  }
+
+  .mat-mdc-form-field-infix {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+  }
+
+  .mdc-floating-label {
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+  }
+
+  .mdc-floating-label--float-above {
+    transform: translateY(-130%) scale(0.75) !important;
+  }
+
+  .mdc-text-field--focused .mdc-notched-outline__leading,
+  .mdc-text-field--focused .mdc-notched-outline__notch,
+  .mdc-text-field--focused .mdc-notched-outline__trailing {
+    border-color: #1976d2 !important;
+    border-width: 1px !important;
+  }
+
+  .mdc-text-field:not(.mdc-text-field--disabled) .mdc-notched-outline__leading,
+  .mdc-text-field:not(.mdc-text-field--disabled) .mdc-notched-outline__notch,
+  .mdc-text-field:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing {
+    border-width: 1px !important;
+  }
+
+  .mdc-notched-outline__notch {
+    border-right: none;
+  }
+} 

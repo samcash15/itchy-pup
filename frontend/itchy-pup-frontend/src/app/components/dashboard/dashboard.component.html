@@ -1,0 +1,42 @@
+<div class="dashboard-container">
+  <mat-toolbar color="primary" class="toolbar">
+    <span>Itchy Pup</span>
+    <span class="spacer"></span>
+    <button mat-icon-button (click)="onLogout()" aria-label="Logout">
+      <span class="material-symbols-outlined">logout</span>
+    </button>
+  </mat-toolbar>
+
+  <div class="content">
+    <div class="welcome-card">
+      <h1>Welcome to Your Dashboard</h1>
+      <p>This is your personal space to manage your pet's allergies.</p>
+    </div>
+
+    <div class="dashboard-grid">
+      <div class="dashboard-card">
+        <span class="material-symbols-outlined dashboard-icon">sound_detection_dog_barking</span>
+        <h2>My Pup</h2>
+        <p>Manage your pups profile</p>
+      </div>
+
+      <div class="dashboard-card">
+        <span class="material-symbols-outlined dashboard-icon">partly_cloudy_day</span>
+        <h2>Weather & Pollen</h2>
+        <p>Check today's allergy forecast</p>
+      </div>
+
+      <div class="dashboard-card">
+        <span class="material-symbols-outlined dashboard-icon">medication</span>
+        <h2>Symptoms</h2>
+        <p>Track allergy symptoms</p>
+      </div>
+
+      <div class="dashboard-card">
+        <span class="material-symbols-outlined dashboard-icon">medical_services</span>
+        <h2>Medications</h2>
+        <p>Manage your pups medications</p>
+      </div>
+    </div>
+  </div>
+</div> 
